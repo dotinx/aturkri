@@ -1,0 +1,17 @@
+==========
+Project Name Generator
+==========
+
+How to build:
+
+	zig build --release=fast
+
+How to use:
+	
+	/path/to/binary [count]
+
+This thing is so dumb that I won't maintain it only if I need to add more syllables.
+
+TODO:
+
+ - [ ] Cross-compile many binarys and release them
