@@ -1,12 +1,9 @@
 const std = @import("std");
 const isaac64 = std.rand.Isaac64;
 const testing = std.testing;
+const syllable = @import("syllable.zig");
 
-const syllables = [_][]const u8{
-    "uta", "po",  "nia", "ta",  "ro",  "mo",  "ri", "tze", "tki", "ru", "vi",  "ra",
-    "ko",  "sa",  "ri",  "ne",  "ko",  "mi",  "wa", "tsu", "ot",  "ku", "tsi", "tso",
-    "ryo", "psi", "kro", "ato", "oyo", "kyo",
-};
+const syllables = syllable.syllables;
 
 fn getRandomSyllable(rng: *std.rand.Random) []const u8 {
     return syllables[rng.intRangeLessThan(usize, 0, syllables.len)];
