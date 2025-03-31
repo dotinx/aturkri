@@ -12,7 +12,8 @@ pub fn main() !void {
         if (std.fmt.parseInt(usize, arg, 10)) |n| {
             count = n;
         } else |_| {
-            std.debug.print("Invalid parameter, generating one name.\n", .{});
+            std.debug.print("Usage: \n  {s} [how-many-names]\n", .{args[0]});
+            return;
         }
     }
 

@@ -30,14 +30,12 @@ pub fn generateName(allocator: std.mem.Allocator, seed: u64, syllable_count: usi
 }
 
 test "Test single syllable" {
-    // try testing.expect(add(3, 7) == 10);
     var prng = isaac64.init(0);
     var rng = prng.random();
     std.debug.print("A Syllable: {s}\n", .{getRandomSyllable(&rng)});
 }
 
 test "Test random word" {
-    // try testing.expect(add(3, 7) == 10);
     var gpa = std.heap.page_allocator;
     var prng = isaac64.init(0);
     var rng = prng.random();
