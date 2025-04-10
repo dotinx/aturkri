@@ -1,2 +1,18 @@
 .zig-cache/
 zig-out/
+#Temp Build
+aturkri-linux-aarch64
+aturkri-linux-aarch64.o
+aturkri-linux-x86
+aturkri-linux-x86_64
+aturkri-linux-x86_64.o
+aturkri-linux-x86.o
+aturkri-windows-aarch64.exe
+aturkri-windows-aarch64.exe.obj
+aturkri-windows-aarch64.pdb
+aturkri-windows-x86_64.exe
+aturkri-windows-x86_64.exe.obj
+aturkri-windows-x86_64.pdb
+aturkri-windows-x86.exe
+aturkri-windows-x86.exe.obj
+aturkri-windows-x86.pdb

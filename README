@@ -2,6 +2,8 @@
 aturkri: A Project Name Generator
 ==========
 
+THIS IS AN ZIG 0.13.0 PROJECT. THERE IS NO PLAN TO UPGRADE TO ZIG 0.14.0 SINCE IT REMOVED std.rand!
+
 How to build:
 
 	zig build --release=fast
@@ -10,8 +12,10 @@ How to use:
 	
 	/path/to/binary [count]
 
+How to release manually:
+
+	./build
+
+I'm tired to make a github action to do this. I can do this manually.
+
 This thing is so dumb that I won't maintain it only if I need to add more syllables.
-
-TODO:
-
- - [ ] Cross-compile many binarys and release them

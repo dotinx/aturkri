@@ -1,0 +1,8 @@
+#!/bin/bash
+zig build-exe -Doptimize=ReleaseSafe -static -target x86-linux-musl --name aturkri-linux-x86 src/main.zig
+zig build-exe -Doptimize=ReleaseSafe -static -target x86_64-linux-musl --name aturkri-linux-x86_64 src/main.zig
+zig build-exe -Doptimize=ReleaseSafe -static -target aarch64-linux-musl --name aturkri-linux-aarch64 src/main.zig
+zig build-exe -Doptimize=ReleaseSafe -static -target x86-windows --name aturkri-windows-x86 src/main.zig
+zig build-exe -Doptimize=ReleaseSafe -static -target x86_64-windows --name aturkri-windows-x86_64 src/main.zig
+zig build-exe -Doptimize=ReleaseSafe -static -target aarch64-windows --name aturkri-windows-aarch64 src/main.zig
+echo "Finished Build"
